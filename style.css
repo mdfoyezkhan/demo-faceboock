@@ -14,6 +14,7 @@
     top: 0;
     width: 100%;
     box-shadow: 0px 0px 5px 0px #0000005e;
+    z-index: 20;
 }
 .navigation-bar {
     display: flex;
@@ -112,7 +113,8 @@
   flex-direction: column;
   gap: 25px;
   height: 90vh;
-
+  position: sticky;
+  top: 75px;
 }
 .left-box-wrapper hr {
   color: #00000040;
@@ -241,7 +243,6 @@
 }
 .input-profile img {
   width: 100%;
-  height: 100%;
 }
 .search-bar-wrapper {
   background: white;
@@ -274,4 +275,101 @@
 }
 .color3 i {
   color: #949412;
+}
+
+/* -------------post box style here------------- */
+
+.post-box-wrapper {
+  padding: 20px 0px;
+  overflow: hidden;
+  background: white;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+.post-box-top {
+  width: 100%;
+  display: flex;
+  padding: 0px 20px 5px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-box-top i {
+  font-size: 25px;
+  margin-right: 13px;
+}
+.post-profile-img {
+  width: 50px;
+  overflow: hidden;
+  height: 50px;
+  border-radius: 50%;
+}
+.post-profile-img img {
+  width: 100%;
+}
+.post-box-profile {
+  display: flex;
+  gap: 12px;
+}
+.post-profile-name h3 {
+  text-transform: capitalize;
+}
+.post-profile-name p {
+  color: #928e8e;
+}
+.post-profile-name p i {
+  font-size: 12px;
+}
+.post-main-img {
+  padding: 0px 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.post-main-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.visible-lcs-box {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  align-items: center;
+  margin: auto;
+  border-bottom: 1px solid #d6d2d2;
+  padding: 20px;
+}
+.visible-lcs-box p{
+  text-transform: capitalize;
+}
+.like-comment-share-box {
+  width: 97%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #d6d2d2;
+  margin: auto;
+}
+.like-comment-share-box p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.visible-lcs-box p i:first-child {
+  color: #5189F4;
+}
+.visible-lcs-box p i:nth-child(2){
+  color: #d3d317;
+}
+.visible-lcs-box p i:last-child{
+  color: #d40f0f;
+}
+.like-comment-share-box p i {
+  color: #888a8a;
+}
+.like-color i{
+  color: #3a79f0 !important;
+}
+.post-search {
+  border: none;
+  padding: 10px 20px 0px 20px;
 }
