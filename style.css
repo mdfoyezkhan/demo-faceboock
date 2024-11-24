@@ -38,6 +38,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 0px 120px;
+    cursor: pointer;
   }
   .right-box {
     width: 25%;
@@ -85,6 +86,7 @@
     border-radius: 50%;
     background: #ece7e7;
     font-size: 23px;
+    cursor: pointer;
   }
   .right-box i:last-child {
     padding: 35px;
@@ -123,6 +125,7 @@
   text-transform: capitalize;
   font-weight: bold;
   color: #00000063;
+  cursor: pointer;
 }
 .sengle-box-wrapper {
   display: flex;
@@ -184,6 +187,7 @@
 .rls-icon {
   height: 18px;
   overflow: hidden;
+  cursor: pointer;
 }
 .rls-icon img {
   width: 100%;
@@ -266,6 +270,7 @@
 .search-box-icon p {
   color: #706d6d;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .color1 i {
   color: #d62222;
@@ -296,12 +301,14 @@
 .post-box-top i {
   font-size: 25px;
   margin-right: 13px;
+  cursor: pointer;
 }
 .post-profile-img {
   width: 50px;
   overflow: hidden;
   height: 50px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .post-profile-img img {
   width: 100%;
@@ -312,9 +319,11 @@
 }
 .post-profile-name h3 {
   text-transform: capitalize;
+  cursor: pointer;
 }
 .post-profile-name p {
   color: #928e8e;
+  cursor: pointer;
 }
 .post-profile-name p i {
   font-size: 12px;
@@ -340,6 +349,7 @@
 }
 .visible-lcs-box p{
   text-transform: capitalize;
+  cursor: pointer;
 }
 .like-comment-share-box {
   width: 97%;
@@ -353,6 +363,7 @@
 .like-comment-share-box p {
   font-size: 20px;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .visible-lcs-box p i:first-child {
   color: #5189F4;
@@ -372,4 +383,174 @@
 .post-search {
   border: none;
   padding: 10px 20px 0px 20px;
+}
+
+/* ---------------right box style here---------------- */
+
+
+.right-box-wrapper {
+  padding: 32px 20px 20px 20px;
+  position: sticky;
+  top: 75px;
+  overflow-y: scroll;
+  height: 90vh;
+}
+.right-box-wrapper::-webkit-scrollbar{
+  display: none !important;
+}
+.add-box h3 {
+  color: #807777;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.main-add-box {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.main-add-box img {
+  width: 190px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-text h4 {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.apple {
+  border-bottom: 1px solid #8a82826e;
+}
+
+.friend-request {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.friend-request span {
+  font-weight: 500;
+  color: #00000091;
+}
+.friend-request a {
+  text-decoration: none;
+}
+.friend-name-box {
+  display: flex;
+  gap: 10px;
+}
+.friend-name-box img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.mutual-friend img {
+  height: 20px;
+  width: 20px;
+}
+.mutual-friend img:last-child {
+  margin-left: -5px;
+}
+.mutual-friend {
+  display: flex;
+  align-items: center;
+}
+.mutual-friend p {
+  margin-left: 5px;
+  color: #00000096;
+  font-size: 13px;
+}
+.add-remove-btn {
+  padding: 7px 15px;
+  margin-top: 20px;
+  border: none;
+  background: dodgerblue;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.friend-repuest-box {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #00000042;
+  cursor: pointer;
+}
+.arb{
+  background: #00000042;
+  color: black;
+}
+
+.birthday-icon img {
+  width: 60px;
+}
+.birthday-icon {
+  display: flex;
+  align-items: center;
+  margin: 14px 0px;
+}
+.birthday-date-box p {
+  padding: 10px 0px 0px 10px;
+  color: #726c6c;
+  font-weight: 500;
+  cursor: pointer;
+}
+.birthday-date-box {
+  border-bottom: 1px solid #989090d6;
+}
+.birthday-icon p {
+  color: black;
+
+}
+
+.birthday-icon p span {
+  font-weight: 300;
+}
+
+.contact-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.contact-icon {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #0000009e;
+}
+.contact-icon i{
+  cursor: pointer;
+}
+.contact-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.contact-person img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.contact-icon-wrapper p {
+  color: #000000a6;
+  font-weight: 500;
+}
+
+.contact-person::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #049335;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: 46px;
+  bottom: 10px;
+  outline: 3px solid white;
+}
+.contact-person {
+  position: relative;
+  cursor: pointer;
 }
