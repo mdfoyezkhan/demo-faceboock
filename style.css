@@ -43,9 +43,9 @@
   .right-box {
     width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 80px;
+    padding-left: 120px;
   }
   .profile-img {
     width: 50px;
@@ -85,7 +85,7 @@
     padding: 12px;
     border-radius: 50%;
     background: #ece7e7;
-    font-size: 23px;
+    font-size: 20px;
     cursor: pointer;
   }
   .right-box i:last-child {
@@ -394,10 +394,12 @@
   top: 75px;
   overflow-y: scroll;
   height: 90vh;
+  scrollbar-width: none; 
 }
-.right-box-wrapper::-webkit-scrollbar{
-  display: none !important;
+.right-box-wrapper::-webkit-scrollbar {
+  display: none;
 }
+
 .add-box h3 {
   color: #807777;
   font-weight: 500;
